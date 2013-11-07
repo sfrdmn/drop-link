@@ -2,6 +2,9 @@
   "name": "drop-link",
   "version": "0.1.0",
   "main": "lib/drop-link.js",
+  "bin": {
+    "drop-link": "bin/drop-link-cli.js"
+  },
   "description": "A CLI tool to quickly share links in a Dropbox",
   "homepage": "https://github.com/sfrdmn/drop-link",
   "bugs": "https://github.com/sfrdmn/drop-link/issues",
@@ -12,7 +15,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/sfrdmn/drop-link"
-  },
+  }
   "licenses": [
     {
       "type": "MIT"
