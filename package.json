@@ -1,6 +1,6 @@
 {
   "name": "drop-link",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "lib/drop-link.js",
   "bin": {
     "drop-link": "bin/drop-link-cli.js"

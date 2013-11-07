@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, serif;
+        font-size: 24px;
+        line-height: 1.5em;
+      }
+      body {
+        margin-top: 1.5em;
+      }
+      a {
+        color: #0000ff;
+      }
+      a:hover {
+        text-decoration: none;
+        border-bottom: 1px solid #0000ff;
+      }
+      a:visited {
+        color: #0000ff;
+      }
+      div {
+        text-align: center;
+        margin: 1em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Forwarding you to <a href="{{location}}">{{location}}</a></div>
+  <script>
+    window.location = '{{location}}'
+    setTimeout(function() {
+      var div = document.createElement('div')
+      div.innerHTML = 'Something went wrong. Operation timed out. :('
+      document.body.appendChild(div)
+    }, 1000 * 10)
+  </script>
+  </body>
+</html>
